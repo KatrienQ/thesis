@@ -15,7 +15,7 @@ my @fimoResults = readFileToArray( $fimo );
 # MA0494.1        chr10:24496237-24498236_hg19_3100_.     1434    1452    +       21.6774 1.89e-09        0.00248 TGACCTCGAGTGACCTGTG
 
 my $count = 1;
-print "chrom", "\t", "start", "\t", "end", "\t", "name", "\t", "score", "\t", "strand", "\n"; 
+print "#chrom", "\t", "start", "\t", "end", "\t", "name", "\t", "score", "\t", "strand", "\n"; 
 foreach my $result ( @fimoResults ) {
 	my @record = split( /\t+/, $result );
 
